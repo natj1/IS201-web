@@ -1,0 +1,98 @@
+<!--FOOD HISTORY GENERATOR-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App</title>
+    <link rel="stylesheet" href="../css/mystyles.css">
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* background-color: #fff8e1; */
+        }
+        button {
+            padding: 10px 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 22px;
+            color: #fff;
+            background-color: #8d6e63;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #5d4037;
+        }
+        .idea-container {
+            margin-top: 20px;
+            font-size: 22px;
+            color: #4e342e;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            width: 80%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body class="homebg">
+    <div class="common header darktext">
+        <span class="subheader lighttext">
+            <!--NAVIGATION-->
+            <a class="headerlinks" href="food.html" id="top">Food History</a> |
+            <a class="headerlinks" href="#">Web App</a>  |
+            <a class="headerlinks" href="index.html">Professional Home</a>
+            <br> <br> 
+        </span>    
+        <h1 class="lighttext">Natalie's Scratch Page: Web App</h1>    
+    </div>
+    <h1 class="darktext">Food History Activity Generator</h1>
+    <h3 class="darktext"><i>Created in collaboration with ChatGPT</i></h3><br><br>
+    <button id="generate-btn">Generate Food History Activity</button>
+    <div class="idea-container" id="idea-container">Click the button to get a food-history activity!</div>
+
+    <script>
+        const ideas = [
+            "Make a recipe from one of your ancestors.",
+            "Research the history of a favorite holiday dish.",
+            "Bake a bread recipe from the 1800s.",
+            "Explore the origins of a dessert from the 1870s.",
+            "Cook a meal using only ingredients available in your region 100 years ago.",
+            "Learn about the history of your favorite spice and use it in a dish.",
+            "Recreate a dish served at a famous historical event.",
+            "Watch a video from Tasting History on YouTube.",
+            "Research the history of chocolate and make a chocolate dessert.",
+            "Try making a preserved food like jam, pickles, or cured meat.",
+            "Host a tea party and serve historical snacks.",
+            "Find an old cookbook and pick a recipe to try.",
+            "Learn about a traditional food from a culture you admire and try making it.",
+            "Discover how people stored food before refrigeration and try one method.",
+            "Learn about food during a particular war.",
+            "Listen to an episode of Gastropod.",
+            "Make a dish inspired by a historical figure you admire."
+        ];
+
+        const button = document.getElementById("generate-btn");
+        const ideaContainer = document.getElementById("idea-container");
+
+        button.addEventListener("click", () => {
+            const randomIndex = Math.floor(Math.random() * ideas.length);
+            ideaContainer.textContent = ideas[randomIndex];
+        });
+    </script>
+    <div class="common footer">
+        Created by Natalie Wing from scratch with HTML and CSS | 2024
+    </div>
+</body>
+</html>

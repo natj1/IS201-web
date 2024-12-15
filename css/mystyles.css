@@ -1,0 +1,117 @@
+/* FONTS, BACKGROUNDS, & OTHER BASIC STYLES */
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgb(34, 22, 14);
+    font-size: 18px;
+}
+
+.homebg{
+    background-color: rgb(214, 213, 196);
+}
+
+.lighttext{
+    color: antiquewhite;
+}
+
+.darktext{
+    color: rgb(88, 57,39)
+}
+
+.justify{text-align: justify;}
+
+/*LINKS*/
+/* General Links */
+a{
+    color: darkred;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Special Links */
+a.headerlinks{
+        color:antiquewhite;
+        text-decoration: none;
+}
+
+a.headerlinks:hover{
+    text-decoration: underline;
+}
+
+a.navlinks{
+    color: antiquewhite;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+a.navlinks:hover{
+    text-decoration: underline;
+}
+
+
+/* SPACING & LAYOUT */
+.common{
+    /* background-color: #cccccc; */
+    border: 2px solid rgb(88, 57, 39);
+    position: absolute;
+}
+
+.header{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    z-index: 3;
+    background-color: rgb(88, 57, 39);
+    position: fixed;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.leftmenu{
+    top: 81px;
+    left: 0px;
+    width: 200px;
+    bottom: 44px;
+    z-index: 2;
+    position: fixed;
+    background-color: rgb(182, 152, 111);
+    border: rgb(182, 152, 111);
+}
+
+.mainbody{
+    top: 90px;
+    left: 214px;
+    right: 5px;
+    /* bottom: 39px; */
+    padding-right:25px;
+    padding-left:25px;
+    border: rgb(214, 213, 196);
+}
+
+.footer{
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 25px;
+    font-size: 12px;
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 15px;
+    position: fixed;
+    background-color: rgb(88, 57, 39);
+    z-index: 1;
+}
+
+.subheader{
+    float: right;
+}
+
+.anchor{
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
